@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    color: #FF9933;
+}
+
+p {
+    margin-left: 5%;
+    color: #b5b69c
+}
+
+ol {
+    margin-left: 5%;
+    color: #b5b69c;
+}
+
+body {
+    background: url(background.jpg) no-repeat;
+    background-color: black;
+    background-position: 50% 50%;
+
+}
+
+.image {
+    width: 30%;
+}
+
+blockquote {
+    color: #b5b69c;
+}
+
+.box {
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: black;
+    border: 1px solid #872626;
+    opacity: 0.9;
+}
