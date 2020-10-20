@@ -1,6 +1,13 @@
 h1 {
-    text-align: center;
+    margin-left: 5;
+    text-align: left;
     color: #FF9933;
+}
+
+h3 {
+    margin-left: 5%;
+    text-align: left;
+    color: whitesmoke;
 }
 
 a {
@@ -18,7 +25,7 @@ ol {
 }
 
 body {
-    background: url(background.jpg) no-repeat;
+    background: url(./pictures/background.jpg) no-repeat;
     background-color: black;
     background-position: 50% 50%;
 
@@ -40,3 +47,12 @@ blockquote {
     border: 1px solid #872626;
     opacity: 0.9;
 }
+.nav_box {
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-right: 77%;
+    background-color: black;
+    border: 1px solid #872626;
+    opacity: 0.9;
+}
+
