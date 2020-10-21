@@ -1,13 +1,31 @@
-h1 {
-    margin-left: 5;
+header h1 {
+    margin-left: 2%;
     text-align: left;
     color: #FF9933;
 }
+
 
 h3 {
     margin-left: 5%;
     text-align: left;
     color: whitesmoke;
+}
+
+div>h4 {
+    margin-left: 5%;
+    text-align: left;
+    color: whitesmoke;
+
+}
+
+h4+p {
+    margin-left: 8%;
+    color: #b5b69c
+}
+
+.guide {
+    margin-left: 8%;
+    color: #b5b69c
 }
 
 a {
@@ -24,15 +42,29 @@ ol {
     color: #b5b69c;
 }
 
+ul {
+    margin-left: 8%;
+    color: #b5b69c;
+}
+
+
 body {
-    background: url(./pictures/background.jpg) no-repeat;
-    background-color: black;
-    background-position: 50% 50%;
+    background: url(./pictures/background.jpg) left no-repeat, url(./pictures/background.jpg) right no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    background-color: #261825;
+
 
 }
 
 .image {
-    width: 30%;
+    width: 40%;
+
+}
+
+.image_menu {
+    width: 60%;
+    margin-left: 15%;
 }
 
 blockquote {
@@ -41,18 +73,42 @@ blockquote {
 
 .box {
     margin-top: 0%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     background-color: black;
     border: 1px solid #872626;
-    opacity: 0.9;
 }
+
 .nav_box {
     margin-top: 0%;
     margin-left: 2%;
-    margin-right: 77%;
+    margin-right: 85%;
     background-color: black;
     border: 1px solid #872626;
+    opacity: 0.6;
+}
+
+.head_box {
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid #872626;
+    background-color: #872626;
     opacity: 0.9;
 }
 
+nav {
+    margin-left: 2%;
+    margin-bottom: 1%;
+    padd
+}
+
+nav a {
+
+    padding: 20px 20px;
+    border-top: 2px solid #3f0f0f;
+    border-right: 2px solid #3f0f0f;
+    border-bottom: 2px solid #3f0f0f;
+    border-left: 2px solid #3f0f0f;
+    background-color: #3f0f0f;
+}
