@@ -18,12 +18,24 @@ ul {
 }
 
 figcaption {
+    margin-top: 2%;
     margin-left: 6%;
     text-align: center;
     color: #b5b69c;
     background-color: #872626;
     border: 1px, #872626, solid;
     margin-right: 1150px;
+
+}
+
+figcaption.shadows_of_evil {
+    margin-top: 2%;
+    margin-left: 6%;
+    text-align: center;
+    color: #b5b69c;
+    background-color: #872626;
+    border: 1px, #872626, solid;
+    margin-right: 890px;
 
 }
 
@@ -38,7 +50,7 @@ ul figcaption+img {
     width: 402px;
 }
 
-figcaption.img_small{
+figcaption.img_small {
     margin-left: 6%;
     text-align: center;
     color: #b5b69c;
@@ -99,9 +111,6 @@ main p {
     margin-left: 8%;
     color: #b5b69c
 }
-
-
-
 
 
 .image {
