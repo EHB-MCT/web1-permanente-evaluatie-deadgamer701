@@ -1,40 +1,10 @@
-header h1 {
-    margin-left: 2%;
-    text-align: left;
-    color: #FF9933;
-}
-
-
-h3 {
+p {
     margin-left: 5%;
-    text-align: left;
-    color: whitesmoke;
-}
-
-div>h4 {
-    margin-left: 5%;
-    text-align: left;
-    color: whitesmoke;
-
-}
-
-h4+p {
-    margin-left: 8%;
-    color: #b5b69c
-}
-
-.guide {
-    margin-left: 8%;
     color: #b5b69c
 }
 
 a {
     color: #b5b69c;
-}
-
-p {
-    margin-left: 5%;
-    color: #b5b69c
 }
 
 ol {
@@ -47,15 +17,92 @@ ul {
     color: #b5b69c;
 }
 
+figcaption {
+    margin-left: 6%;
+    text-align: center;
+    color: #b5b69c;
+    background-color: #872626;
+    border: 1px, #872626, solid;
+    margin-right: 1150px;
+
+}
+
+
+figcaption+img {
+    margin-left: 6%;
+    width: 770px;
+}
+
+ul figcaption+img {
+    margin-left: 6%;
+    width: 402px;
+}
+
+figcaption.img_small{
+    margin-left: 6%;
+    text-align: center;
+    color: #b5b69c;
+    background-color: #872626;
+    border: 1px, #872626, solid;
+    margin-right: 1330px;
+}
+
 
 body {
-    background: url(./pictures/background.jpg) left no-repeat, url(./pictures/background.jpg) right no-repeat;
+    background: url(./pictures/background.jpg) left no-repeat, url(./pictures/background.jpg) right no-repeat, linear-gradient(#281825, #678154);
     background-attachment: fixed;
     background-size: auto;
-    background-color: #261825;
 
 
 }
+
+blockquote {
+    color: #b5b69c;
+}
+
+.head_box {
+
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid #872626;
+    background-color: #872626;
+    opacity: 0.9;
+}
+
+header h1 {
+    margin-left: 2%;
+    text-align: left;
+    color: #FF9933;
+}
+
+h3,
+h5 {
+    margin-left: 5%;
+    text-align: left;
+    color: whitesmoke;
+}
+
+div>h4 {
+    margin-left: 5%;
+    text-align: left;
+    color: whitesmoke;
+
+}
+
+main p {
+    margin-left: 8%;
+    color: #b5b69c
+}
+
+.guide {
+    margin-left: 8%;
+    color: #b5b69c
+}
+
+
+
+
 
 .image {
     width: 40%;
@@ -67,9 +114,7 @@ body {
     margin-left: 15%;
 }
 
-blockquote {
-    color: #b5b69c;
-}
+
 
 .box {
     margin-top: 0%;
@@ -82,33 +127,39 @@ blockquote {
 .nav_box {
     margin-top: 0%;
     margin-left: 2%;
-    margin-right: 85%;
+    margin-right: 75%;
     background-color: black;
     border: 1px solid #872626;
     opacity: 0.6;
 }
 
-.head_box {
-    margin-top: 0%;
-    margin-left: 20%;
-    margin-right: 20%;
-    border: 1px solid #872626;
-    background-color: #872626;
-    opacity: 0.9;
+div.nav_box a {
+    margin-left: 7%;
+
 }
+
 
 nav {
     margin-left: 2%;
-    margin-bottom: 1%;
-    padd
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 nav a {
 
     padding: 20px 20px;
+    margin-top: 1%;
     border-top: 2px solid #3f0f0f;
     border-right: 2px solid #3f0f0f;
     border-bottom: 2px solid #3f0f0f;
     border-left: 2px solid #3f0f0f;
     background-color: #3f0f0f;
+}
+
+a.navhor:hover {
+    background-color: black;
+}
+
+a.navver:hover {
+    background-color: #7d2426;
 }
