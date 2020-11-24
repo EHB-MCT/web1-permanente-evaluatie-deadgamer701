@@ -1,42 +1,77 @@
-h1 {
-    text-align: center;
-    color: #FF9933;
-}
-
-a {
-    color: #b5b69c;
-}
-
-p {
-    margin-left: 5%;
-    color: #b5b69c
-}
-
-ol {
-    margin-left: 5%;
-    color: #b5b69c;
-}
-
 body {
-    background: url(background.jpg) no-repeat;
-    background-color: black;
-    background-position: 50% 50%;
+    margin: 0%;
+}
+
+/******************
+*  header,footer  *
+******************/
+header,
+footer {
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header a {
+    padding: 13% 10%;
+    color: white;
+}
+
+header a:hover {
+    background-color: #00BCE1;
+}
+
+header a:active {
+    background-color: #3ceae3;
+}
+
+nav {
+    width: 20%;
+}
+
+
+header a {
+    margin: 2% 0%;
+}
+
+/*****************
+*      main      *
+******************/
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #faf9ff;
+}
+
+main figure {
+    position: relative;
+    width: 50%;
+    align-self: center;;
+}
+
+figcaption {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 35%;
+    
+}
+
+.para_left {
+    margin: 2% auto 2% 3%;
+    text-align: left;
+    background-color: #00BCE1;
+    padding: 1%;
 
 }
 
-.image {
-    width: 30%;
-}
-
-blockquote {
-    color: #b5b69c;
-}
-
-.box {
-    margin-top: 0%;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: black;
-    border: 1px solid #872626;
-    opacity: 0.9;
+.para_right {
+    margin: 2% 3% 2% auto;
+    text-align: right;
+    background-color: #3caea3;
+    padding: 1%;
 }
