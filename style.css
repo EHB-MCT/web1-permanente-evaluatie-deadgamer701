@@ -50,7 +50,8 @@ main {
 main figure {
     position: relative;
     width: 50%;
-    align-self: center;;
+    align-self: center;
+    ;
 }
 
 figcaption {
@@ -58,7 +59,7 @@ figcaption {
     color: white;
     top: 50%;
     left: 35%;
-    
+
 }
 
 .para_left {
