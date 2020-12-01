@@ -1,6 +1,33 @@
 body {
     margin: 0%;
     color: white;
+    width: 100%;
+    height: 100%;
+    background: url(./pictures/background/BO3_chronicles.jpg);
+    animation: images 20s infinite;
+}
+
+/********************
+*     background    *
+*       images      *
+********************/
+
+@keyframes images {
+    0% {
+        background: url(https://store-images.s-microsoft.com/image/apps.49646.64840222596934154.2e6b5e82-895f-45cd-b74d-3491e1d62f70.5147c967-07c6-4613-b5a0-11af2a3b726f?mode=scale&q=90&h=1080&w=1920&format=jpg);
+        background-size: cover;
+    }
+
+    50% {
+        background: url(https://assets.rockpapershotgun.com/images/2020/02/Apex-Legends-Season-4-Revenant.jpg);
+        background-size: cover
+    }
+
+    100% {
+        background: url(https://www.airsoftlimburg.be/media/images/gallery/2/big/108.jpg);
+        background-size: cover
+    }
+
 }
 
 /******************
@@ -61,7 +88,6 @@ header a {
 main {
     display: flex;
     flex-direction: column;
-    margin: 5% 20% 2% 20%;
 }
 
 .home {
@@ -89,51 +115,5 @@ figcaption {
     color: white;
     top: 50%;
     left: 35%;
-
-}
-
-.para_left {
-    display: flex;
-    flex-direction: column;
-    margin: 2% 60% 2% 10%;
-    text-align: left;
-    background-color: #00BCE1;
-    padding: 2%;
-
-}
-
-.para_left a {
-    color: white;
-    align-self: center;
-    padding: 2% 5%;
-    background-color: #212529;
-}
-
-.para_right {
-    margin: 2% 10% 2% 60%;
-    text-align: right;
-    background-color: #3caea3;
-    padding: 2%;
-}
-
-.gaming_intro {
-    background-color: #212529;
-}
-
-.img_row {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.img_row img {
-    width: 100%;
-    overflow: hidden;
-}
-
-.game_title {
-    text-align: center;
-    padding: 2%;
-    background-color: #00BCE1;
 
 }
