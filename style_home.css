@@ -1,10 +1,90 @@
+/***************
+    icon font
+***************/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?2i9h9t');
+    src: url('fonts/icomoon.eot?2i9h9t#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?2i9h9t') format('truetype'),
+        url('fonts/icomoon.woff?2i9h9t') format('woff'),
+        url('fonts/icomoon.svg?2i9h9t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-phone:before {
+    content: "\e904";
+
+}
+
+.icon-phone:hover {
+    content: "\e904";
+    color: #00e113
+}
+
+.icon-facebook:before {
+    content: "\e900";
+}
+
+.icon-facebook:hover {
+    content: "\e900";
+    color: #1877f2;
+}
+
+.icon-gmail:before {
+    content: "\e901";
+}
+
+.icon-gmail:hover {
+    content: "\e901";
+    color: #d14836;
+}
+
+.icon-instagram:before {
+    content: "\e902";
+}
+
+.icon-instagram:hover {
+    content: "\e902";
+    color: #e4405f;
+}
+
+
+.icon-steam:before {
+    content: "\e903";
+}
+
+.icon-steam:hover {
+    content: "\e903";
+    color: #071832;
+}
+
 body {
     margin: 0%;
     color: white;
     width: 100%;
     height: 100%;
-    background: url(./pictures/background/BO3_chronicles.jpg);
-    animation: images 20s infinite;
+    background: url(https://store-images.s-microsoft.com/image/apps.49646.64840222596934154.2e6b5e82-895f-45cd-b74d-3491e1d62f70.5147c967-07c6-4613-b5a0-11af2a3b726f?mode=scale&q=90&h=1080&w=1920&format=jpg) no-repeat;
+    animation: images 25s infinite;
 }
 
 /********************
@@ -14,41 +94,56 @@ body {
 
 @keyframes images {
     0% {
-        background: url(https://store-images.s-microsoft.com/image/apps.49646.64840222596934154.2e6b5e82-895f-45cd-b74d-3491e1d62f70.5147c967-07c6-4613-b5a0-11af2a3b726f?mode=scale&q=90&h=1080&w=1920&format=jpg);
+        background: url(https://store-images.s-microsoft.com/image/apps.49646.64840222596934154.2e6b5e82-895f-45cd-b74d-3491e1d62f70.5147c967-07c6-4613-b5a0-11af2a3b726f?mode=scale&q=90&h=1080&w=1920&format=jpg) no-repeat;
         background-size: cover;
     }
 
     50% {
-        background: url(https://assets.rockpapershotgun.com/images/2020/02/Apex-Legends-Season-4-Revenant.jpg);
+        background: url(https://assets.rockpapershotgun.com/images/2020/02/Apex-Legends-Season-4-Revenant.jpg) no-repeat;
         background-size: cover
     }
 
     100% {
-        background: url(https://www.airsoftlimburg.be/media/images/gallery/2/big/108.jpg);
+        background: url(https://www.airsoftlimburg.be/media/images/gallery/2/big/108.jpg) no-repeat;
         background-size: cover
     }
 
 }
 
 /******************
-*  header,footer  *
+*     header      *
 ******************/
-header,
-footer {
+header {
     background-color: #212529;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header a {
-    padding: 8% 10%;
-    color: white;
+nav.header {
+    width: 30%;
+    padding: 2% 1%;
+    margin: 2% 0% 2%;
+
 }
 
-footer a {
-    padding: 5% 12.5%;
+header a {
+    padding: 10% 10%;
+    color: white;
+    flex-shrink: 0
 }
+
+header a:hover {
+    background-color: #00BCE1;
+}
+
+header a:active {
+    background-color: #3ceae3;
+}
+
+/******************
+*     footer      *
+******************/
 
 footer {
     background-color: #212529;
@@ -56,29 +151,28 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2%;
 }
 
 footer h2 {
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 }
 
-a:hover {
-    background-color: #00BCE1;
+nav.footer {
+    width: 20%;
+    margin: 0% 0% 2%;
 }
 
-a:active {
-    background-color: #3ceae3;
+nav.footer a {
+    text-decoration: none;
+    color: white;
 }
 
-nav {
-    width: 25%;
+span {
+    text-align: center;
+    margin: 10% 5%;
+    font-size: 200%;
 }
 
-
-header a {
-    margin: 2% 0%;
-}
 
 /*****************
 *      main      *

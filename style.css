@@ -1,27 +1,122 @@
+/***************
+    icon font
+***************/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?2i9h9t');
+    src: url('fonts/icomoon.eot?2i9h9t#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?2i9h9t') format('truetype'),
+        url('fonts/icomoon.woff?2i9h9t') format('woff'),
+        url('fonts/icomoon.svg?2i9h9t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-phone:before {
+    content: "\e904";
+
+}
+
+.icon-phone:hover {
+    content: "\e904";
+    color: #00e113
+}
+
+.icon-facebook:before {
+    content: "\e900";
+}
+
+.icon-facebook:hover {
+    content: "\e900";
+    color: #1877f2;
+}
+
+.icon-gmail:before {
+    content: "\e901";
+}
+
+.icon-gmail:hover {
+    content: "\e901";
+    color: #d14836;
+}
+
+.icon-instagram:before {
+    content: "\e902";
+}
+
+.icon-instagram:hover {
+    content: "\e902";
+    color: #e4405f;
+}
+
+
+.icon-steam:before {
+    content: "\e903";
+}
+
+.icon-steam:hover {
+    content: "\e903";
+    color: #071832;
+}
+
 body {
     margin: 0%;
     color: white;
 }
 
 /******************
-*  header,footer  *
+*     header      *
 ******************/
-header,
-footer {
+header {
     background-color: #212529;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header a {
-    padding: 8% 10%;
-    color: white;
+nav.header {
+    width: 30%;
+    padding: 2% 1%;
+    margin: 2% 0% 2%;
+
 }
 
-footer a {
-    padding: 5% 12.5%;
+header a {
+    padding: 10% 10%;
+    color: white;
+    flex-shrink: 0
 }
+
+header a:hover {
+    background-color: #00BCE1;
+}
+
+header a:active {
+    background-color: #3ceae3;
+}
+
+/******************
+*     footer      *
+******************/
 
 footer {
     background-color: #212529;
@@ -29,28 +124,26 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2%;
 }
 
 footer h2 {
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 }
 
-a:hover {
-    background-color: #00BCE1;
+nav.footer {
+    width: 20%;
+    margin: 0% 0% 5%;
 }
 
-a:active {
-    background-color: #3ceae3;
+nav.footer a {
+    text-decoration: none;
+    color: white;
 }
 
-nav {
-    width: 25%;
-}
-
-
-header a {
-    margin: 2% 0%;
+span {
+    text-align: center;
+    margin: 10% 5%;
+    font-size: 200%;
 }
 
 /*****************
@@ -63,19 +156,6 @@ main {
     flex-direction: column;
     margin: 5% 20% 2% 20%;
 }
-
-.home {
-    background-color: #212529;
-    display: flex;
-    flex-direction: row;
-    margin: 15% 30%;
-    padding: 2%;
-}
-
-.home div {
-    margin: 5%;
-}
-
 
 main figure {
     position: relative;
@@ -90,30 +170,6 @@ figcaption {
     top: 50%;
     left: 35%;
 
-}
-
-.para_left {
-    display: flex;
-    flex-direction: column;
-    margin: 2% 60% 2% 10%;
-    text-align: left;
-    background-color: #00BCE1;
-    padding: 2%;
-
-}
-
-.para_left a {
-    color: white;
-    align-self: center;
-    padding: 2% 5%;
-    background-color: #212529;
-}
-
-.para_right {
-    margin: 2% 10% 2% 60%;
-    text-align: right;
-    background-color: #3caea3;
-    padding: 2%;
 }
 
 .gaming_intro {
@@ -136,4 +192,37 @@ figcaption {
     padding: 2%;
     background-color: #00BCE1;
 
+}
+
+/*********************
+*      About me      *
+*********************/
+div {
+    padding: 2%;
+    margin-top: 5%;
+    display: flex;
+}
+
+div img {
+    width: 20%;
+}
+
+.gito {
+    background-color: #00BCE1;
+}
+
+.left {
+    padding-right: 5%;
+}
+
+.erasmus {
+    background-color: #1dc6ce;
+}
+
+.right {
+    padding-left: 5%;
+}
+
+.gaming {
+    background-color: #239ca5;
 }
