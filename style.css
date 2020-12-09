@@ -94,16 +94,14 @@ header {
 }
 
 nav.header {
-    width: 30%;
-    padding: 2% 1%;
-    margin: 2% 0% 2%;
+    display: flex;
 
 }
 
 header a {
-    padding: 10% 10%;
     color: white;
-    flex-shrink: 0
+    padding: 20%;
+    margin: 30% 5%;
 }
 
 header a:hover {
@@ -131,19 +129,22 @@ footer h2 {
 }
 
 nav.footer {
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
     margin: 0% 0% 5%;
 }
 
 nav.footer a {
     text-decoration: none;
     color: white;
+    padding: .5% 5%;
 }
 
 span {
     text-align: center;
     margin: 10% 5%;
-    font-size: 200%;
+    font-size: 300%;
 }
 
 /*****************
@@ -177,8 +178,10 @@ figcaption {
 }
 
 .img_row {
+    margin-top: 0;
     display: flex;
     flex-direction: row;
+    background-color: #031f28;
 }
 
 
@@ -190,9 +193,11 @@ figcaption {
 .game_title {
     text-align: center;
     padding: 2%;
+    margin: 2% 0% 0% 0%;
     background-color: #00BCE1;
 
 }
+
 
 /*********************
 *      About me      *
@@ -201,6 +206,7 @@ div {
     padding: 2%;
     margin-top: 5%;
     display: flex;
+    border: 1px solid black;
 }
 
 div img {
@@ -209,6 +215,7 @@ div img {
 
 .gito {
     background-color: #00BCE1;
+
 }
 
 .left {
