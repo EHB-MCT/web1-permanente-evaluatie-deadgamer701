@@ -2,6 +2,8 @@
     icon font
 ***************/
 
+
+
 @font-face {
     font-family: 'icomoon';
     src: url('fonts/icomoon.eot?2i9h9t');
@@ -79,6 +81,7 @@
 }
 
 body {
+    font-family: Verdana;
     margin: 0%;
     color: white;
 }
@@ -91,6 +94,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header img {
+    width: 150px;
 }
 
 nav.header {
@@ -138,7 +145,7 @@ nav.footer {
 nav.footer a {
     text-decoration: none;
     color: white;
-    padding: .5% 5%;
+    padding: 5%;
 }
 
 span {
@@ -155,39 +162,6 @@ span {
 main {
     display: flex;
     flex-direction: column;
-    margin: 5% 20% 2% 20%;
-}
-
-main figure {
-    position: relative;
-    width: 50%;
-    align-self: center;
-    ;
-}
-
-figcaption {
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 35%;
-
-}
-
-.gaming_intro {
-    background-color: #212529;
-}
-
-.img_row {
-    margin-top: 0;
-    display: flex;
-    flex-direction: row;
-    background-color: #031f28;
-}
-
-
-.img_row img {
-    width: 100%;
-    overflow: hidden;
 }
 
 .game_title {
@@ -195,41 +169,83 @@ figcaption {
     padding: 2%;
     margin: 2% 0% 0% 0%;
     background-color: #00BCE1;
+    margin: 5% 2% 0%;
 
 }
+
+.title2 {
+    margin: 0% 2% 0%;
+}
+
+.img_row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #031f28;
+    margin: 0% 2% 5%;
+}
+
+.img_row img {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.active {
+    transform: translate(-100%, 0);
+    position: absolute;
+    opacity: 0;
+}
+
+.active:hover {
+    opacity: 1;
+}
+
 
 
 /*********************
 *      About me      *
 *********************/
-div {
-    padding: 2%;
-    margin-top: 5%;
-    display: flex;
-    border: 1px solid black;
-}
-
-div img {
-    width: 20%;
-}
-
-.gito {
-    background-color: #00BCE1;
-
-}
-
 .left {
-    padding-right: 5%;
-}
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    background-color: #00BCE1;
+    border: 2px solid #00BCE1;
+    border-radius: 25px;
+    margin: 5% 40% 2% 5%;
 
-.erasmus {
-    background-color: #1dc6ce;
 }
 
 .right {
-    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    background-color: #1dc6ce;
+    border: 2px solid #1dc6ce;
+    border-radius: 25px;
+    margin: 5% 5% 2% 40%;
 }
 
-.gaming {
-    background-color: #239ca5;
+div img {
+    width: 40%;
+}
+
+div a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+div p {
+    font-size: 13pt;
+}
+
+.left p {
+    margin: 0% 25% auto 2%;
+}
+
+.right p {
+    margin: 0% 2% auto 25%;
+    text-align: right;
 }

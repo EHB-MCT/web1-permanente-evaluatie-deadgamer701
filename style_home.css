@@ -1,6 +1,7 @@
 /***************
     icon font
 ***************/
+@import url("https://use.typekit.net/oba8rng.css");
 
 @font-face {
     font-family: 'icomoon';
@@ -79,6 +80,7 @@
 }
 
 body {
+    font-family: Verdana;
     margin: 0%;
     color: white;
     width: 100%;
@@ -96,6 +98,7 @@ body {
     0% {
         background: url(https://store-images.s-microsoft.com/image/apps.49646.64840222596934154.2e6b5e82-895f-45cd-b74d-3491e1d62f70.5147c967-07c6-4613-b5a0-11af2a3b726f?mode=scale&q=90&h=1080&w=1920&format=jpg) no-repeat;
         background-size: cover;
+
     }
 
     50% {
@@ -118,6 +121,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header img {
+    width: 150px;
 }
 
 nav.header {
@@ -165,7 +172,7 @@ nav.footer {
 nav.footer a {
     text-decoration: none;
     color: white;
-    padding: .5% 5%;
+    padding: 5%;
 }
 
 span {
@@ -184,12 +191,17 @@ main {
     flex-direction: column;
 }
 
+main h1 {
+    font-family: "bely";
+    font-size: 50px;
+}
+
 .home {
     background-color: #212529;
     display: flex;
     flex-direction: row;
-    margin: 15% 30%;
-    padding: 2%;
+    margin: 10% auto;
+    padding: 1%;
 }
 
 .home div {
