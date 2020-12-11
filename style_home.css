@@ -136,6 +136,7 @@ header a {
     color: white;
     padding: 20%;
     margin: 30% 5%;
+    text-align: center;
 }
 
 header a:hover {
@@ -239,7 +240,7 @@ figcaption {
     }
 
     nav.header {
-        margin: 10% 0% ;
+        margin: 10% 0%;
         width: 90%;
     }
 
@@ -247,7 +248,6 @@ figcaption {
         padding: 10%;
         margin: 2%;
         background-color: #212121;
-        text-align: center;
         text-decoration: none;
     }
 

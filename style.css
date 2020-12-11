@@ -109,6 +109,7 @@ header a {
     color: white;
     padding: 20%;
     margin: 30% 5%;
+    text-align: center;
 }
 
 header a:hover {
@@ -253,6 +254,54 @@ div p {
     text-align: right;
 }
 
+@media screen and (max-width: 1024px) {
+    /*********************
+    *   header,footer    *
+    *********************/
+
+    header a {
+        margin: 2%;
+        background-color: #212121;
+        text-decoration: none;
+        margin: 0% 1% 10%;
+    }
+
+    /*********************
+    *      gaming      *
+    *********************/
+
+    .img_row {
+        padding: 5% 0% 10%;
+        margin: auto 8% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game_title {
+        margin: 10% 8% auto;
+    }
+
+    .title2 {
+        margin-top: 0%;
+    }
+
+    /*********************
+    *      About me      *
+    *********************/
+
+    .left{
+        margin: 5% 5% 2% 5%
+    }
+
+    .right {
+        margin: 5% 5% 2% 5%
+    }
+
+
+
+}
+
 @media screen and (max-width: 768px) {
 
     body {
@@ -280,7 +329,6 @@ div p {
         padding: 10%;
         margin: 2%;
         background-color: #212121;
-        text-align: center;
         text-decoration: none;
     }
 
@@ -318,7 +366,9 @@ div p {
         flex-direction: column;
     }
 
-    .left{flex-direction: column-reverse;}
+    .left {
+        flex-direction: column-reverse;
+    }
 
     .left img,
     .right img {
