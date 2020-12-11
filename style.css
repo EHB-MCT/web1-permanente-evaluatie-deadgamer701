@@ -164,6 +164,10 @@ main {
     flex-direction: column;
 }
 
+/*********************
+*      Gaming      *
+*********************/
+
 .game_title {
     text-align: center;
     padding: 2%;
@@ -188,7 +192,6 @@ main {
 .img_row img {
     width: 500px;
     height: 350px;
-    overflow: hidden;
 }
 
 .active {
@@ -248,4 +251,85 @@ div p {
 .right p {
     margin: 0% 2% auto 25%;
     text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-image: none;
+        animation: none;
+    }
+
+    /*********************
+    *   header,footer    *
+    *********************/
+
+    header,
+    nav.header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav.header {
+        margin: 10% 0%;
+        width: 90%;
+    }
+
+    header a {
+        padding: 10%;
+        margin: 2%;
+        background-color: #212121;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    span {
+        text-align: center;
+        margin: 10%;
+        font-size: 200%;
+    }
+
+    /*********************
+    *      gaming      *
+    *********************/
+
+
+    .img_row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_row img {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    /*********************
+    *      About me      *
+    *********************/
+
+    .left,
+    .right {
+        margin: 5% 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left{flex-direction: column-reverse;}
+
+    .left img,
+    .right img {
+        align-self: center;
+        width: 400px;
+        height: 400px;
+    }
+
+
+    .left p,
+    .right p {
+        margin: auto;
+    }
 }
