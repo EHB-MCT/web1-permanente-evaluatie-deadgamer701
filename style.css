@@ -298,6 +298,14 @@ div p {
         margin: 5% 5% 2% 5%
     }
 
+    .left p {
+        margin: 0% 10% auto 2%;
+    }
+    
+    .right p {
+        margin: 0% 2% auto 10%;
+    }
+
 
 
 }
