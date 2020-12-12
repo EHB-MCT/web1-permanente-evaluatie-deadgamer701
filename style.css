@@ -290,7 +290,7 @@ div p {
     *      About me      *
     *********************/
 
-    .left{
+    .left {
         margin: 5% 5% 2% 5%
     }
 
@@ -301,7 +301,7 @@ div p {
     .left p {
         margin: 0% 10% auto 2%;
     }
-    
+
     .right p {
         margin: 0% 2% auto 10%;
     }
@@ -380,6 +380,7 @@ div p {
 
     .left img,
     .right img {
+        margin: 5% 0%;
         align-self: center;
         width: 400px;
         height: 400px;
